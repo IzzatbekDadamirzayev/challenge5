@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> -->
+</head>
+
+<body>
+  <div class="container">
+    <img class="logo" src="images/logo.svg" alt="">
+    <h1 class="header">We are launching <b>soon!</b></h1>
+    <p class="header-p">Subscribe and get notified</p>
+    <form id="form" action="#">
+      <input id="input" class="animate__animated salom" type="email" onkeyup="valdateOnkeydown()" placeholder="Your email adress...">
+      <p id="error-m" class="error-m">Please provide a valid email addres</p>
+      <button type="button" onclick="validateemail()" >Notify Me</button>
+      <p id="error-d" class="error-d">Please provide a valid email addres</p>
+    </form>
+    <img class="con-img" src="images/illustration-dashboard.png" alt="">
+    <div class="socials">
+      <div class="s-box">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="s-box">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="s-box">
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <p class="cpy">&copyCopyright Ping. All rights reserved.</p>
+  </div>
+  <script src="emailvalidator.js"></script>
+</body>
+
+</html>
